@@ -3,7 +3,7 @@
 const chalk = require('chalk')
 var readLineSync = require("readline-sync")
 var username = readLineSync.question("Hello There! What's your Name? \n")
-console.log(chalk.yellow("Welcome To the Quiz! Mohit's friend: " + username ))
+console.log(chalk.blue("Welcome To the Quiz! Mohit's friend: " + username ))
 console.log(chalk.magentaBright("Lets get Started \n"))
 
 var score=0;
@@ -16,8 +16,8 @@ function play(question, answer) {
   score = score + 1
   }
 else{
-  console.log(chalk.red("BOO! You're wrong!! \n"))
-  console.log("--------------")
+  console.log(chalk.red("BOO! You're wrong!! The correct Answer is " + answer + " \n"))
+  console.log("-*-*-*-*-*-*-*-*-*-*-*-*-*-*")
   }
 }
 var questionOne = {
@@ -35,8 +35,8 @@ var questionThree= {
   answer: "Quora",
 }
 var questionFour = { 
-  question:"When is Mohit's birthday?  You NEED to get this Right \n",
-  answer:"6 february",
+  question:"When is Mohit's birthday? enter in dd/mm/yyyy format  Come ON! You NEED to get this Right \n",
+  answer:"06/02/1999",
 }
 
 var questionFive= {
